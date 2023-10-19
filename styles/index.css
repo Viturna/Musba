@@ -570,6 +570,7 @@ form label{
 .contact input[type=text],
 .contact input[type=email],
 .contact textarea{
+    width: 35vw;
     color: var(--color-text);
     font-size: 16px;
     font-style: normal;
@@ -614,18 +615,22 @@ form label{
   /* style the items (options), including the selected item: */
   .select-items div,.select-selected {
     color: var(--color-text);
-    padding: 15px 20px;
+    padding: 25px 20px;
     cursor: pointer;
+    width: 35vw;
+    margin-bottom: 25px;
   }
   
   /* Style items (options): */
   .select-items {
     position: absolute;
-    background-color: white;
+    background-color: #F8F8F8;
+    padding: 25px 20px;
     top: 100%;
     left: 0;
     right: 0;
     z-index: 99;
+    width: 35vw;
   }
   
   /* Hide the items when the select box is closed: */
@@ -812,7 +817,8 @@ form input[type=submit]:hover{
 
 
     .link-box-top{
-        margin: 0;
+        width: 100vw;
+        padding: 0;
         margin-top: 32px;
     }
 
