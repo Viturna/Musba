@@ -1,0 +1,306 @@
+:root{
+    --spacing-large: 128px;
+    --spacing-meduim: 64px;
+    --spacing-small:32px;
+    --spacing:16px;
+    --color-primary: #B92727;
+    --color-primary-hover: #941F1F;
+    --color-background: #F9FBFC;
+    --color-title: #252525;
+    --color-text: #687B8E;
+}
+body{
+    font-family: Helvetica;
+    background-color: var(--color-background);
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+img{
+    object-fit: cover;
+}
+.title-section{
+    color: var(--color-title);
+    font-family: Abhaya Libre;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+.title{
+    padding-top: 300px;
+    margin-left: 64px;
+    width: 50vw;
+    color: #FFF;
+    font-family: Abhaya Libre;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 0.75px;
+}
+/* Fonts */
+/* Abhaya Libre */
+@font-face {
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/abhaya-libre/AbhayaLibre-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/fonts/abhaya-libre/AbhayaLibre-Medium.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/abhaya-libre/AbhayaLibre-SemiBold.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/abhaya-libre/AbhayaLibre-Bold.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../assets/fonts/abhaya-libre/AbhayaLibre-ExtraBold.woff2') format('woff2');
+    font-display: swap;
+}
+
+/* Helvetica */
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../assets/fonts/helvetica/helvetica-light.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/helvetica/Helvetica.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/helvetica/Helvetica-Bold.woff2') format('woff2');
+    font-display: swap;
+}
+
+/* Header */
+a{
+    text-decoration: none;
+}
+header{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    transition: top 0.3s; 
+    z-index: 999;
+}
+.language {
+    color: var(--White, #FFF);
+    /* Body - p */
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    margin-right: 64px;
+    border: none;
+    height: auto;
+    background-color: #ffffff00;
+    margin-bottom: 16px;
+}
+
+.language option {
+    color: rgb(0, 0, 0);
+}
+
+header select:focus{
+    outline:0;
+}
+
+
+.navigation {
+    display: flex;
+    gap: 64px;
+    color: #FFFFFF;
+    list-style: none;
+    margin-left: 64px;
+}
+
+.navigation a {
+    color: #FFFFFF;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+}
+.navigation a:hover {
+    opacity: 0.8;
+}
+
+.bottom-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.top-header {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.search-bar-wrapper {
+    margin-right: 64px;
+  }
+  
+  .search-bar-wrapper * {
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  .input-wrapper {
+    position: relative;
+  }
+  
+  .input-field {
+    width: 50px;
+    height: 20px;
+    margin-top: 0px;
+    background: transparent;
+    border: 5px solid transparent;
+    transition: all 0.4s ease-in-out;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .input-field:focus {
+    border-bottom: 3px solid #ffffff;
+    width: 25vw;
+    color: #ffffff;
+    cursor: default;
+    padding: 12px;
+  }
+  
+  .input-field:focus ~ .search-icon {
+
+    cursor: pointer;
+    pointer-events: auto;
+    border: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+
+    font-size: 20px;
+  
+    text-align: center;
+    border-color: transparent;
+    border-radius: 50%;
+    pointer-events: none;
+    display: inline-block;
+    transition: background-color 0.4s ease-in-out;
+ 
+  }
+  
+  .input-field::-webkit-input-placeholder {
+    color: #F9FBFC;
+  }
+  
+
+  
+
+
+
+header hr {
+    margin-left: 64px;
+    margin-right: 64px;
+    border: 3px solid #fff;
+
+}
+
+header .logo {
+    margin-left: 64px;
+    margin-bottom: 16px;
+    width: 170px;
+}
+
+.search-bar {
+    border: none;
+    background-color: red;
+}
+
+
+
+
+
+@media screen and (min-width:350px) and (max-width:500px){
+    body{
+        overflow-x: hidden;
+    }
+    .title{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        text-align: center;
+        font-size: 48px;
+    }
+    .title-section{
+        font-size: 35px;
+    }
+
+    header{
+        background: rgba(0, 0, 0, 0.20);
+    }
+    .language {
+        display: none;
+    }
+    
+
+    .bottom-header {
+        display:none;
+    }
+    
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    
+    }
+    header hr {
+        display: none;
+    
+    }
+    header .logo {
+        margin-left: 32px;
+        margin-bottom: 16px;
+        width: 130px;
+    }
+
+}
+
+
+    

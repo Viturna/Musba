@@ -1,0 +1,83 @@
+{
+  "home": "Home",
+  "ticketing": "Ticketing",
+  "exhibitions": "Our exhibitions",
+  "collections": "Our collections",
+  "workshops": "Our workshops",
+  "search_placeholder": "Search here...",
+
+
+  "title_exhibition":"Exhibition Absolutely Bizarre",
+  "location_exhibition":"Fine Arts Gallery",
+  "date_exhibition":"June 10 - October 17 2021",
+  "read_more":"Read more",
+
+  "arianas_thread":"Exhibitions  > ",
+  "arianas_span":"Expo Absolutely Bizarre",
+  "introduction":"Introduction",
+  "introduction_text":"The British art collection of the Musée des Beaux-Arts de Bordeaux, has the honor of presenting its latest exhibition “Absolutely Bizarre”. The opportunity to discover a unique exhibition, alongside masterpieces on exceptional loan from the Louvre Museum, this year's British partner. More than a simple pictorial movement, it is more of an informal association of painters. But mainly landscapers, and amateurs characteristic of the artistic realities of the first half of the 19th century. This exhibition offers the first overall presentation, both in France and in Great Britain, of this unique “Bristol School”.",
+
+  "first_pic_caption":"Samuel Colman, A romantic landscape with the arrival of the Queen of Sheba 1830",
+  "second_pic_caption":"William West, The Israelites Passing through the Wilderness, Preceded by the Pillar of Light, 1845, oil on canvas © Bristol, Bristol Museum & Art Gallery.",
+  "third_pic_caption":"Francis Danby, A Scene in Leigh Woods, 1822, oil on canvas, Bristol Museum & Art Gallery.",
+
+  "summary":"Summary",
+  "part_one":"First part",
+  "part_two":"Second part",
+  "part_three":"Third part",
+  "part_four":"Fourth part",
+
+  "first_paragraph":"Artists renew a wide variety of genres. By exhibiting the painting of city life and genre scenes, seen through the prism of the social transformations of the time. The artists revisited the landscape through an original form of picturesque views, and finally the fantastic painting was treated with a hitherto unprecedented ambition. From 1800 to 1840, Bristol will be the breeding ground for artistic talents which, for some, will be noticed as far away as London:",
+  "second_paragraph":"Edward Bird, Francis Danby, Edward Villiers Rippingille, Samuel Colman, Samuel Jackson, Rolinda Sharples – brilliant female artist – and finally William James Müller.",
+  "third_paragraph":"Ce dernier, qui réalisa un témoignage saisissant des émeutes embrasant Bristol en 1831, sera mis en regard, pour la première fois, d’un célèbre contemporain, William Turner, dont on pourra admirer de puissantes aquarelles représentant l’incendie du Parlement britannique, qui eut lieu trois ans plus tard.",
+  "fourth_paragraph":"The Museum of Fine Arts thus hosts 80 works coming mainly from the Bristol Museum (65 watercolors and oil paintings), to which are added several loans from the Victoria Art Gallery in Bath and the Tate Britain in London as well as the Louvre Museum.\n\n Curator of A British Year at the museum! : Sophie Barthélémy, director of the Bordeaux Museum of Fine Arts, Sandra Buratti-Hasan, deputy director of the Museum of Fine Arts, curator of the 19th-20th century collections and Guillaume Faroult, chief curator at the Louvre Museum, in charge of 18th century French paintings and British and American paintings. For Absolutely Bizarre!, Jenny Gaschke, Curator of European Collections before 1900 at Bristol Museum & Art Gallery.",
+  "fifth_paragraph":"A catalog offers the first overall presentation, both in France and in Great Britain, of this singular phenomenon represented by “The Bristol School”. It brings together introductory essays on this school but also a set of more than 70 notes devoted to the works exhibited. Directed by Guillaume Faroult, this work benefits from contributions from David Solkin, honorary professor at the Courtauld Institute in London, from Jenny Gaschke, curator of ancient collections (pre-1900) at the Bristol Museum & Art Gallery, from Amy Concannon, curator of collections British (1790-1850) at Tate Britain, as well as co-curators Sophie Barthélémy and Sandra Buratti-Hasan. Absolutely Weird! The funny stories of the Bristol School (1800-1840), co-edition Musée des Beaux-Arts/Éditions Snoeck, 280 pages, 29 euros.",
+
+  "buy_ticket":"Buy your tickets here",
+
+  "other_collections":"Discover our other collections",
+  "first_collection_name":"Strandbeests",
+  "first_collection_intro":"Strandbeests by Theo Jansen, as part of the FAB",
+  "second_collection_name":"Rosa Bonheur (1822-1899)",
+  "second_collection_intro":"George Achille-Fould, Portrait of Rosa Bonheur © Museum of Fine Arts, Photo: F. Deval.",
+  "third_collection_name":"In the privacy of Roger Bissière (1886-1964)",
+  "third_collection_intro":"Salle des Modernes, north wing.",
+
+  "exhibition_partners":"Thank you to our patrons and exhibition partners",
+  "other_partners":"And the partners of its cultural programming:",
+  "other_partners_first_paragraph":"CAPC musée d'art contemporain CIAP (centre d'interprétation de l'architecture et du patrimoine Centre commercial Mériadeck Bibliothèque Mériadeck British Consulate Lecteurs migrateurs",
+  "other_partners_second_paragraph":"Opéra National de Bordeaux Tim Pike Pôle d'enseignement supérieur de la musique et de la danse de Bordeaux Aquitaine (PESMD) Université de Bordeaux Université de Toulouse",
+
+  
+  "footer_text":"The Musée des Beaux-Arts de Bordeaux is a European art museum located in the city center of Bordeaux. It houses a collection of paintings, sculptures and art objects dating from the Renaissance to the 19th century. Among the museum's most famous works are Poussin's \"Le Christ au jardin des oliviers\" Rubens' \"Le Martyre de Saint Denis\"  and Delacroix's \"La Liberté guidant le peuple\"",
+  "musba_adress":"20 cours d'Albret, Bordeaux",
+  "musba_phone":"+33 5 56 10 20 56",
+  "email_text":"Everything you need to know about MusBA news",
+  "email_placeholder":"Enter your e-mail...",
+
+  "about_links":"About",
+  "establishment":"Our establishment",
+  "team":"Our crew",
+  "visit_rules":"Rules of visit",
+  "faqs":"FAQs",
+
+  "navigation_links":"Navigation",
+  "donate":"Make a donation",
+
+  "social_media_links":"Social Medias",
+  "youtube":"YouTube",
+  "twitter":"Twitter",
+  "instagram":"Instagram",
+  "facebook":"Facebook",
+  "linkedin":"Linkedin",
+
+  "schedules":"Schedules",
+  "schedules_text":"Wednesday to Monday from 11 a.m. to 6 p.m. Closed Tuesdays and during public holidays.",
+
+  "all_rights_reserved":"© MusBA 2023 - All rights reserved",
+  "support":"Support",
+  "legal_mentions":"Legal mentions",
+  "privacy_police":"Privacy police",
+  "tof":"ToS"
+
+}
