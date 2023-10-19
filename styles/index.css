@@ -4,7 +4,7 @@
     height: 810px;
     background: no-repeat;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/img/index/background-top.webp');
-    background: no-repeat;
+    background-size: cover;
 }
 .main-button{
     display: inline-flex;
@@ -103,14 +103,14 @@
 }
 .card-expo:nth-child(1){
     margin-right: var(--spacing);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/img/index/img-expo.webp');
-    background-size: cover;
     background: no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/img/index/img-expo.webp');
+    background-size: cover;
 }
 .card-expo:nth-child(2){
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/img/index/img-expo-1.webp');
-    background-size: cover;
     background: no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/img/index/img-expo-1.webp');
+    background-size: cover;
 }
 .box-text-expo{
     position: absolute;
