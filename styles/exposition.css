@@ -1,6 +1,8 @@
 .main {
     position: relative;
-    background-image: url('../assets/img/exposition/main-background.webp');
+    /* background-image: url('../assets/img/exposition/main-background.webp'); */
+    border: 0.949px solid #000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3)), url('../assets/img/exposition/main-background.webp');
     background-size: cover;
     height: 90vh;
     background-repeat: no-repeat;
