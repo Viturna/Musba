@@ -3,7 +3,7 @@
     width: 100vw;
     height: 810px;
     background: no-repeat;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url('../assets/img/background-top.webp'), lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url('../assets/img/index/background-top.webp'), lightgray 50% / cover no-repeat;
 }
 .main-button{
     display: inline-flex;
@@ -102,11 +102,11 @@
 }
 .card-expo:nth-child(1){
     margin-right: var(--spacing);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url('../assets/img/img-expo.webp'), lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url('../assets/img/index/img-expo.webp'), lightgray 50% / cover no-repeat;
     background-size: cover;
 }
 .card-expo:nth-child(2){
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url('../assets/img/img-expo-1.webp'), lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url('../assets/img/index/img-expo-1.webp'), lightgray 50% / cover no-repeat;
     background-size: cover;
 }
 .box-text-expo{
