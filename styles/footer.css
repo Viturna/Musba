@@ -1,20 +1,12 @@
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: var(--grid-gap);
-}
-
 .top-footer {
     align-items: start;
+    display: flex;
     justify-content: space-between;
-    padding: 64px 128px;
+   padding: 64px 128px;
 
 }
 
-
 .presentation-musba {
-    grid-column-start: 5;
-    grid-column: span 4;
     color: #687B8E;
     font-size: 16px;
     font-style: normal;
@@ -22,12 +14,6 @@
     line-height: 130%;
     letter-spacing: 0.16px;
     width: 28vw;
-}
-
-.newsletter {
-    display: grid;
-    grid-column-start: 8;
-    grid-column: span 4;  
 }
 
 .title-newsletters {
@@ -41,24 +27,21 @@
     text-transform: uppercase;  
 }
 .logo {
-    grid-column-start: 2;
-    grid-column: span 3;
     display: flex;
     flex-direction: column;
 }
-.logo svg{
-    margin-bottom: 16px;
+.logo-footer{
+    margin-bottom: 32px;
 }
 .info-contact {
-    grid-column: span 3;
-    margin-top: 16px;
-    margin-left: 16px;
-   
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 25px;
 }
-
-input{
-    grid-column-start: 8;
-    grid-column: span 4;
+.info-contact svg{
+    margin-right: 15px;
+}
+footer input{
     color: #252525;
     font-family: Helvetica;
     font-size: 17px;
@@ -72,16 +55,14 @@ input{
     margin-top: 32px;
 }
 
-
 footer hr {
     background: #252525;
-    width: 80vw;
-    height: 0.1vw;
+    width: 1100px;
+    height: 1px;
 
 }
 
 .mid-footer {
-    display: grid; 
     align-items: start;
     display: flex;
     justify-content: space-between;
@@ -101,11 +82,13 @@ footer hr {
     letter-spacing: 0.154px;
     text-decoration: none;
 }
-
+.link-footer ul li a:hover{
+    text-decoration: underline;
+}
 .texte-horaires {
     color:  #687B8E;
     font-family: Helvetica;
-    font-size: 15.424px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; 
@@ -137,7 +120,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 .mention-legales {
@@ -164,7 +147,9 @@ ul {
     list-style: none;
    
 }
-
+.end-footer a:hover{
+    text-decoration: underline;
+}
 .end-footer ul {
     margin-right: 64px;
     display: flex;
@@ -174,4 +159,80 @@ ul {
 .vertical {
     border-left: 1px solid rgb(255, 255, 255);
     height: 20px;
+}
+
+
+@media screen and (min-width:350px) and (max-width:500px){
+    .top-footer {
+        flex-direction: column;
+        padding: 64px 20px;
+    }
+    
+    .presentation-musba {
+        font-size: 16px;
+        width: 85vw;
+    }
+    .newsletter{
+        margin-top: 32px;
+    }
+    .title-newsletters {
+        font-size: 24px; 
+    }
+    .logo-footer{
+        scale: 0.8;
+        margin-bottom: 32px;
+    }
+    .info-contact {
+        margin-bottom: 25px;
+    }
+    .info-contact svg{
+        margin-right: 15px;
+    }
+    footer input{
+        width: 80vw;
+        height: 50px;
+        padding-left: 16px;
+        margin-top: 32px;
+    }
+    footer hr {
+        display: none; 
+    } 
+    .mid-footer {
+      padding: 0 20px;
+      flex-direction: column;
+    }
+    .logo-bordeaux{
+        display: none;
+    }
+    .link-footer{
+        margin: 0;
+        margin-bottom: 16px;
+    }
+    .title-link-footer { 
+        margin-bottom: 16px;
+    }
+    
+    .end-footer {
+       flex-direction: column;
+       justify-content: center;
+        padding: 30px 20px;
+    }
+    
+  .end-footer ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+    
+.mention-legales{
+    text-align: center;
+    margin: 0;
+    width: 80vw;
+    padding-bottom: 20px;
+}
+
+    .vertical {
+        border-left: 1px solid rgb(255, 255, 255);
+        height: 20px;
+    }
 }
