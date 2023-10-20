@@ -20,6 +20,7 @@
     cursor: pointer;
     margin-right: 16px;
     border: 3px solid #FFF;
+    transition: .2s;
     
 }
 .main-button:hover{
@@ -38,6 +39,7 @@
     letter-spacing: 0.225px;
     color: #FFF;
     border: 3px solid #FFF;
+    transition: .2s;
 }
 .secondary-button:hover{
     background-color: #FFF;
@@ -214,6 +216,7 @@
 }
 .image-visite{
     width: 40vw;
+    height: fit-content;
     margin-left: var(--spacing-meduim);
 }
 .box-text-visite .title-section{
