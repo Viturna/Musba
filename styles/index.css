@@ -796,6 +796,8 @@ form input[type=submit]:hover{
 }
 .flex-partner div img{
     user-select: none;
+    width: 200px;
+    min-height: 100px;
 }
 .flex-partner div:hover{
     opacity: 0.8;
