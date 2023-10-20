@@ -216,7 +216,7 @@
 }
 .image-visite{
     width: 40vw;
-    height: fit-content;
+    height: 616px;
     margin-left: var(--spacing-meduim);
 }
 .box-text-visite .title-section{
@@ -298,6 +298,10 @@
     align-items: center;
     font-size: 24px;
 }
+.slide img{
+    width: 30vw;
+    min-height: 600px;
+}
 .box-text-collection{
     margin-left: var(--spacing-meduim);
 }
@@ -334,7 +338,7 @@
     color: #FFF;
     fill: #FFF;
     right: auto;
-    width: fit-content;
+    width: 100%;
 }
 .slide .link:hover svg path{
     fill: #FFF;
