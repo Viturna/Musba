@@ -1222,11 +1222,11 @@ form input[type=submit]:hover{
         width: fit-content;
     }
     .consent{
-        width: 60%;
+        width: 100%;
     }
 
     .container {
-        width: 70vw;
+        width: 50vw;
         padding-left: 35px;
     }
     /* Partner */
