@@ -181,7 +181,9 @@ ul {
         font-size: 24px; 
     }
     .logo-footer{
-        width: 180px;
+
+        width: 220px;
+        height: 100px;
         margin-bottom: 32px;
     }
     .info-contact {
