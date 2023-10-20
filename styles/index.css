@@ -324,12 +324,12 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.55px;
-    width: 70%;
+    width: 80%;
     margin-bottom: var(--spacing);
 }
 .text-collection{
     color: #FFF;
-    width: 60%;
+    width: 65%;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -795,10 +795,11 @@ form input[type=submit]:hover{
 .flex-partner{
     display: flex;
     align-items: center;
-    gap: 64px;
+    gap: 128px;
     margin-top: var(--spacing-meduim);
 }
 .flex-partner div img{
+    object-fit: contain;
     user-select: none;
     width: 200px;
     height: 150px;
@@ -839,7 +840,6 @@ form input[type=submit]:hover{
         padding: 0;
         margin: 0;
         margin-top: 32px;
-    
     }
 
     /* Texte accroche */
@@ -937,8 +937,8 @@ form input[type=submit]:hover{
     }
     .image-visite{
         margin: 0;
-        width: 80vw;
-        height: 450px;
+        width: 85vw;
+        height: 250px;
     }
     .box-text-visite .title-section{
         width: 80vw;
@@ -946,7 +946,7 @@ form input[type=submit]:hover{
         margin-bottom: var(--spacing-small);
     }
     .box-text-visite{
-        width: 80vw;
+        width: 85vw;
         padding: 0;
     }
     .title-visite{
@@ -987,10 +987,11 @@ form input[type=submit]:hover{
     .box-text-collection{
         margin: 0;
         width: 85%;
+        height: 220px;
     }
     .slide{
         min-width: 90vw;
-        padding: 25px 0;
+        padding: 15px 0;
         height: fit-content;
         flex-direction: column;
         justify-content: center;
@@ -1012,7 +1013,7 @@ form input[type=submit]:hover{
     .slide img{
         margin: 0;
         width: 85%;
-        height: 25%;
+        height: 200px;
         margin-top: 84px;
     }
 
@@ -1023,7 +1024,6 @@ form input[type=submit]:hover{
 
     .slider-nav {
         margin: 0;
-        margin-top: 0px;
         width: 90vw;
     }
     .slider-nav svg{
@@ -1175,6 +1175,7 @@ form input[type=submit]:hover{
     .contact textarea{
         width: 75vw;
         height: 30px;
+        font-size: 15px;
         margin: 15px 0px;
     }
     
@@ -1189,11 +1190,14 @@ form input[type=submit]:hover{
     /* style the items (options), including the selected item: */
     .select-items div,.select-selected {
         width: 75vw;
+        font-size: 15px;
+        margin-top: 16px;
     }
     
     /* Style items (options): */
     .select-items {
         width: 75vw;
+        font-size: 15px;
     }
     
    /* Maps */

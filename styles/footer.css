@@ -26,7 +26,7 @@
     letter-spacing: 0.266px;
     text-transform: uppercase;  
 }
-.logo {
+footer .logo {
     display: flex;
     flex-direction: column;
 }
@@ -179,7 +179,7 @@ ul {
         font-size: 24px; 
     }
     .logo-footer{
-        scale: 0.8;
+        width: 180px;
         margin-bottom: 32px;
     }
     .info-contact {
