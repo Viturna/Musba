@@ -16,10 +16,21 @@
     <link href="./styles/header.css" rel="stylesheet" type="text/css">
     <link href="./styles/footer.css" rel="stylesheet" type="text/css">
     <link href="./styles/exposition.css" rel="stylesheet" type="text/css">
+    <link rel="preload" as="font">
     
     <!-- META -->
     <title>Exposition - Absolutely Bizarre - MusBA</title>
     <meta name="description" content="La collection Absolutely Bizarre du musée des beau arts est là ! L'occasion de découvrir une vision de l'art revisité par les artistes anglais du XIX siècle.">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+	<meta name="theme-color" content="#ffffff">
+
+    <!-- Balises OG -->
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Exposition - Absolutely Bizarre - MusBA">
+    <meta property="og:site_name" content="Musba">
+    <meta property="og:url" content="https://musba.netlify.app/">
+    <meta property="og:description" content="La collection Absolutely Bizarre du musée des beau arts est là ! L'occasion de découvrir une vision de l'art revisité par les artistes anglais du XIX siècle.">
 </head>
 <body>
     <header>
@@ -149,7 +160,7 @@
             <p class="date" data-translation-key="date_exhibition">10 juin - 17 octobre 2021</p>
             <div class="box-show">
                 <a class="show" href="#show" data-translation-key="read_more">
-                    Découvir
+                    Découvrir
                 </a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
                     <g clip-path="url(#clip0_159_5364)">
@@ -252,10 +263,12 @@
                     </p>
                     <div class="img-article">
                         <img src="./assets/img/exposition/image-3.webp" alt="">
-                        <p class="legend" data-translation-key="third_pic_caption">
-                            Francis Danby, Une scène à Leigh Woods (A Scene in Leigh Woods), 1822, huile sur toile, 
-                            Bristol Museum & Art Gallery.
-                        </p>
+                        <div class="overlay">
+                            <p class="legend" data-translation-key="third_pic_caption">
+                                Francis Danby, Une scène à Leigh Woods (A Scene in Leigh Woods), 1822, huile sur toile, 
+                                Bristol Museum & Art Gallery.
+                            </p>
+                        </div>
                     </div>
                     <p class="text-expo" data-translation-key="fifth_paragraph">
                         Un catalogue propose la première présentation d’ensemble, tant en France qu’en Grande-Bretagne,

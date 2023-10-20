@@ -584,6 +584,7 @@ form label{
 /* The container must be positioned relative: */
 .custom-select {
     position: relative;
+     margin-bottom: 25px;
   }
   
   .custom-select select {
@@ -618,15 +619,15 @@ form label{
     padding: 25px 20px;
     cursor: pointer;
     width: 35vw;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
   }
   
   /* Style items (options): */
   .select-items {
     position: absolute;
     background-color: #F8F8F8;
-    padding: 25px 20px;
-    top: 100%;
+    padding-right: 40px;
+    top: 0px;
     left: 0;
     right: 0;
     z-index: 99;
@@ -644,6 +645,7 @@ form label{
   
 form input[type=submit]{
     height: 70px;
+    width:38vw;
     background-color: var(--color-primary);
     font-size: 18px;
     color: #FFF;
@@ -785,7 +787,10 @@ form input[type=submit]:hover{
     gap: 64px;
     margin-top: var(--spacing-meduim);
 }
-.flex-partner a:hover{
+.flex-partner div img{
+    user-select: none;
+}
+.flex-partner div:hover{
     opacity: 0.8;
 }
 

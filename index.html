@@ -16,11 +16,21 @@
     <link href="./styles/header.css" rel="stylesheet" type="text/css">
     <link href="./styles/footer.css" rel="stylesheet" type="text/css">
     <link href="./styles/index.css" rel="stylesheet" type="text/css">
-    <link rel="preload" as="font" href="./assets/fonts/helvetica/Helvetica.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font">
 
     <!-- META -->
     <title>MusBA - Découvrez le Musée des Beaux-Arts Bordeaux</title>
     <meta name="description" content="Venez découvrir des œuvres à travers des expériences inoubliables au Musée des Beaux Arts de Bordeaux, dans une atmosphère unique et agréable.">
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Balises OG -->
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MusBA - Découvrez le Musée des Beaux-Arts Bordeaux">
+    <meta property="og:site_name" content="Musba">
+    <meta property="og:url" content="https://musba.netlify.app/">
+    <meta property="og:description" content="Venez découvrir des œuvres à travers des expériences inoubliables au Musée des Beaux Arts de Bordeaux, dans une atmosphère unique et agréable.">
 </head>
 <body>
   <header>
@@ -185,7 +195,7 @@
         <h2 class="title-section">Histoire de notre musée</h2>
         <div class="box-text-storie">
             <p class="text-storie">Fondé en 1801 et principalement constitué d'une collection de peintures allant du xve au xxe siècle mais qui possède également des collections de sculpture et d'arts graphiques. Notre musée présente la particularité d'être en deux lieux séparés : le musée des Beaux-Arts, cours d'Albret, et la galerie des Beaux-Arts, place du Colonel-Raynal. </p>
-            <p class="text-storie">A son ouverture en 1801 le premier conservateur était <span class="bold red">Pierre Lacours</span>, et c’est lui même la personne qui a apporté les 10 premières oeuvres au musée afin de démaré la collecte. Il fut conservateur jusqu’en 1814 avant d’être succedé par son fils du même nom : Pierre Lacours qui lui resta jusqu’en 1859.</p>
+            <p class="text-storie">A son ouverture en 1801 le premier conservateur était <span class="bold red">Pierre Lacours</span>, et c’est lui même la personne qui a apporté les 10 premières oeuvres au musée afin de démarrer la collecte. Il fut conservateur jusqu’en 1814 avant d’être succédé par son fils du même nom : Pierre Lacours qui lui resta jusqu’en 1859.</p>
             <a href="#" class="link">
                 Découvrir l'histoire du musée
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
@@ -265,7 +275,7 @@
                 <div class="box-text-collection">
                   <p class="tag-slide">Temporaire</p>
                   <p class="title-collection">Rétrospective Jean Dupas</p>
-                  <p class="text-collection">Recherche d'œuvres, archives et documentation</p>
+                  <p class="text-collection">Recherches d'œuvres, archives et documentation</p>
                   <a href="#" class="link">En savoir plus
                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
                       <g clip-path="url(#clip0_617_205)">
@@ -618,11 +628,13 @@
               <label for="email">Adresse mail</label>
               <input type="email" id="email" name="email" placeholder="dupont@mail.com" required>
               <label for="object">Objet</label>
-              <div class="custom-select" style="width:200px;">
+              <div class="custom-select">
               <select name="object" id="object" required>
-                <option value="1" selected>Demande de partenariat</option>
-                <option value="2">EN</option>
-                <option value="3">ES</option>
+                <option value="1">Demande de partenariat</option>
+                <option value="1">Demande de partenariat</option>
+                <option value="2">Question sur le musée</option>
+                <option value="3">Recherche d'emploi</option>
+                <option value="4">Autre</option>
               </select>
             </div>
               <label for="message">Message</label>
@@ -638,8 +650,7 @@
           </div>
           <div class="maps-box">
             <div style="width: 100%">
-              <iframe width="610" height="590" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=610&amp;height=590&amp;hl=fr&amp;q=20%20Cr%20d'Albret,%2033000%20Bordeaux,%20Mus%C3%A9e%20des%20beaux%20arts%20bordeaux+(MusBA)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" title="Map pour retrouver le musée des beaux arts de Bordeaux">
-              </iframe>
+              <iframe width="610" height="590" Loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=610&amp;height=590&amp;hl=fr&amp;q=20%20Cr%20d'Albret,%2033000%20Bordeaux,%20Mus%C3%A9e%20des%20beaux%20arts%20bordeaux+(MusBA)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" title="Map pour retrouver le musée des beaux arts de Bordeaux"></iframe>
             </div>
             <div class="contact-details">
               <div class="box-contact-details">
@@ -749,74 +760,71 @@
     <section class="partner">
         <h2 class="title-section">Ils nous font confiance</h2>
         <div class="flex-partner">
-          <a class="link-partner" href="https://www.infotbm.com/fr" target="_BLANK">
-            <img src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
-          </a>
-          <a class="link-partner" href="https://www.infotbm.com/fr" target="_BLANK">
-            <img src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
-          </a>
-          <a class="link-partner" href="https://www.infotbm.com/fr" target="_BLANK">
-            <img src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
-          </a>
-          <a class="link-partner" href="https://www.infotbm.com/fr" target="_BLANK">
-            <img src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
-          </a>
-          <a class="link-partner" href="https://www.infotbm.com/fr" target="_BLANK">
-            <img src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
-          </a>
-          <a class="link-partner" href="https://www.infotbm.com/fr" target="_BLANK">
-            <img src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
-          </a>
-          <a class="link-partner" href="https://www.infotbm.com/fr" target="_BLANK">
-            <img src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
-          </a>
-          <a class="link-partner" href="https://www.infotbm.com/fr" target="_BLANK">
-            <img src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
-          </a>
-          <a class="link-partner" href="https://www.infotbm.com/fr" target="_BLANK">
-            <img src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
-          </a>
-          <a class="link-partner" href="https://www.infotbm.com/fr" target="_BLANK">
-            <img src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
-          </a>
-          <a class="link-partner" href="https://www.infotbm.com/fr" target="_BLANK">
-            <img src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
-          </a>
-          <a class="link-partner" href="https://www.infotbm.com/fr" target="_BLANK">
-            <img src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
-          </a>
+          <div class="link-partner">
+            <img class="link-partner-img" src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
+          </div>
+          <div class="link-partner">
+            <img class="link-partner-img" src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
+          </div>
+          <div class="link-partner">
+            <img class="link-partner-img" src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
+          </div>
+          <div class="link-partner">
+            <img class="link-partner-img" src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
+          </div>
+          <div class="link-partner">
+            <img class="link-partner-img" src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
+          </div>
+          <div class="link-partner">
+            <img class="link-partner-img" src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
+          </div>
+          <div class="link-partner">
+            <img class="link-partner-img" src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
+          </div>
+          <div class="link-partner">
+            <img class="link-partner-img" src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
+          </div>
+          <div class="link-partner">
+            <img class="link-partner-img" src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
+          </div>
+          <div class="link-partner">
+            <img class="link-partner-img" src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
+          </div>
+          <div class="link-partner">
+            <img class="link-partner-img" src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
+          </div>
+          <div class="link-partner">
+            <img class="link-partner-img" src="./assets/img/logos/tbm.svg" alt="Logo TBM (Transports Bordeaux Métropole)">
+          </div>
         </div>
     </section>
     <script>
       const flexPartner = document.querySelector('.flex-partner');
-      const linkPartner = document.querySelector('.link-partner')
       let isDragging = false;
       let initialX;
       let xOffset = 0;
-  
+    
       flexPartner.addEventListener('mousedown', (e) => {
-          if (e.target.tagName === linkPartner) {
-              isDragging = false;
-          } else {
-              isDragging = true;
-              initialX = e.clientX - xOffset;
-          }
+        // Vérifiez si l'élément ciblé n'est pas une image (balise <img>)
+        if (!e.target.classList.contains('link-partner-img')) {
+          isDragging = true;
+          initialX = e.clientX - xOffset;
+        }
       });
-  
+    
       flexPartner.addEventListener('mouseup', () => {
-          isDragging = false;
-          initialX = xOffset;
+        isDragging = false;
+        initialX = xOffset;
       });
-  
+    
       flexPartner.addEventListener('mousemove', (e) => {
-          if (isDragging) {
-              const currentX = e.clientX - initialX;
-              xOffset = currentX;
-              flexPartner.style.transform = `translateX(${currentX}px)`;
-          }
+        if (isDragging) {
+          const currentX = e.clientX - initialX;
+          xOffset = currentX;
+          flexPartner.style.transform = `translateX(${currentX}px)`;
+        }
       });
-  </script>
-  
+    </script>    
   </main>
   <footer>
     <div class= "top-footer">
