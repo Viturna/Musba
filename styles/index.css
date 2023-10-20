@@ -70,6 +70,7 @@
     line-height: 130%; 
     letter-spacing: 0.48px;
     padding: 200px 0px;
+    max-width: 1200px;
 }
 
 /* Exposition */
@@ -300,6 +301,8 @@
 }
 .slide img{
     width: 30vw;
+    max-width: 500px;
+    max-height: 500px;
     height: 30vw;
 }
 .box-text-collection{
@@ -356,9 +359,9 @@
 }
 
 .slider-nav {
-    margin-left: 64px;
     margin-top: var(--spacing);
     width: 90vw;
+    padding: 0 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -401,6 +404,7 @@
 }
 .img-news{
     width: 30vw;
+    max-width: 500px;
     height: 280px;
     object-fit: cover;
 }
@@ -797,7 +801,7 @@ form input[type=submit]:hover{
 .flex-partner div img{
     user-select: none;
     width: 200px;
-    min-height: 100px;
+    height: 150px;
 }
 .flex-partner div:hover{
     opacity: 0.8;
@@ -815,7 +819,7 @@ form input[type=submit]:hover{
         
     }
     .main-button{
-        width: 70vw;
+        width: 65vw;
         padding: 25px 30px;
         font-size: 20px;
         margin: 0px;
@@ -823,7 +827,7 @@ form input[type=submit]:hover{
     }
 
     .secondary-button{
-        width: 70vw;
+        width: 65vw;
         padding: 25px 30px;
         font-size: 20px;
         margin: 0px;
@@ -831,9 +835,11 @@ form input[type=submit]:hover{
 
 
     .link-box-top{
-        width: 100vw;
+        width: 80vw;
         padding: 0;
+        margin: 0;
         margin-top: 32px;
+    
     }
 
     /* Texte accroche */
@@ -849,6 +855,7 @@ form input[type=submit]:hover{
 
     .expo .title-section{
         width: 80vw;
+        margin-top: 64px;
     }
     .flex-expo{
         margin-top: var(--spacing-small);
@@ -913,9 +920,11 @@ form input[type=submit]:hover{
         scale: 0.8;
     }
     .link-more{
-        font-size: 20px;
+        font-size: 18px;
+        width: 70vw;
+        justify-content: center;
     }
-
+  
     /* Visite */
     .visite{
         flex-direction: column;
@@ -929,9 +938,11 @@ form input[type=submit]:hover{
     .image-visite{
         margin: 0;
         width: 80vw;
+        height: 450px;
     }
     .box-text-visite .title-section{
-        width: 20vw;
+        width: 80vw;
+        margin-top: 16px;
         margin-bottom: var(--spacing-small);
     }
     .box-text-visite{
@@ -975,12 +986,12 @@ form input[type=submit]:hover{
     }
     .box-text-collection{
         margin: 0;
-        margin-top: var(--spacing-small);
         width: 85%;
     }
     .slide{
         min-width: 90vw;
-        min-height: 500px;
+        padding: 25px 0;
+        height: fit-content;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -996,15 +1007,13 @@ form input[type=submit]:hover{
     .text-collection{
         font-size: 18px;
         width: 100%;
+        margin-bottom: 16px;
     }
-    .slide .link{
-        width: fit-content;
-    }
-
     .slide img{
         margin: 0;
         width: 85%;
-        margin-bottom: 80px;
+        height: 25%;
+        margin-top: 84px;
     }
 
     .nav-btn {
@@ -1013,14 +1022,17 @@ form input[type=submit]:hover{
     }
 
     .slider-nav {
-        margin-left: 5vw;
-        margin-top: var(--spacing);
+        margin: 0;
+        margin-top: 0px;
         width: 90vw;
     }
-
+    .slider-nav svg{
+        scale: 0.8;
+    }
     .dot {
-        width: 20px;
-        height: 20px;
+        margin: 0 3px;
+        width: 15px;
+        height: 15px;
     }
 
     /* Actualité */
@@ -1029,6 +1041,7 @@ form input[type=submit]:hover{
         margin-bottom: var(--spacing-small);
     }
     .news{
+        margin-top: 32px;
         padding: 32px 0;
     }
 
@@ -1043,6 +1056,7 @@ form input[type=submit]:hover{
     }
     .img-news{
         width: 85vw;
+        height: 225px;
     }
     .text-box-news{
         margin-top: var(--spacing);
@@ -1063,11 +1077,18 @@ form input[type=submit]:hover{
     /* Agenda */
 
     .flex-agenda{
+        margin: 0;
+        margin-top: 52px;
         gap: 64px 0px;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
     }
     .box-agenda{
         width: 85vw;
         height: 350px;
+        margin: 0;
     }
     .box-agenda:nth-child(4),.box-agenda:nth-child(5),.box-agenda:nth-child(6){
         display: none;
@@ -1153,6 +1174,7 @@ form input[type=submit]:hover{
     .contact input[type=email],
     .contact textarea{
         width: 75vw;
+        height: 30px;
         margin: 15px 0px;
     }
     
@@ -1164,12 +1186,24 @@ form input[type=submit]:hover{
     .contact form textarea{
         height: 180px;
     }
+    /* style the items (options), including the selected item: */
+    .select-items div,.select-selected {
+        width: 75vw;
+    }
+    
+    /* Style items (options): */
+    .select-items {
+        width: 75vw;
+    }
+    
+   /* Maps */
+  
     .maps-box{
         margin: 0;
         margin-top: var(--spacing-small);
     }
-    .maps-box img{
-        width: 85vw;
+    .maps-box iframe{
+        display:none;
     }
     .vertical-line-contact{
         border-left: 2px solid var(--color-title);
@@ -1196,18 +1230,20 @@ form input[type=submit]:hover{
     }
     /* Partner */
     .partner{
-        margin-top: var(--spacing-large);
-        background-color: var(--color-primary);
-        padding: var(--spacing-meduim) 0px;
+        margin-top: var(--spacing-meduim);
+        padding: var(--spacing-small) 0px;
     }
     .partner .title-section{
-        font-size: 55px;
-        color: #FFF;
+        font-size: 35px;
+        width: 85vw;
+        text-align: center;
     }
     .flex-partner{
-    display: none;
+        gap: 32px;
+        margin-top: var(--spacing-small);
     }
-    .flex-partner a:hover{
-        opacity: 0.8;
+    .flex-partner div img{
+        width: 100px;
+        height: 70px;
     }
 }
