@@ -216,7 +216,7 @@
 }
 .image-visite{
     width: 40vw;
-    height: 616px;
+    height: 744px;
     margin-left: var(--spacing-meduim);
 }
 .box-text-visite .title-section{
@@ -300,7 +300,7 @@
 }
 .slide img{
     width: 30vw;
-    min-height: 600px;
+    min-height: 400px;
 }
 .box-text-collection{
     margin-left: var(--spacing-meduim);
