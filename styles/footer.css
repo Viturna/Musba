@@ -32,6 +32,8 @@ footer .logo {
 }
 .logo-footer{
     margin-bottom: 32px;
+    width: 225px;
+    height: 100px;
 }
 .info-contact {
     display: inline-flex;
