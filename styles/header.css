@@ -242,11 +242,6 @@ header select:focus{
   .input-field::-webkit-input-placeholder {
     color: #F9FBFC;
   }
-  
-
-  
-
-
 
 header hr {
     margin-left: 64px;
@@ -297,8 +292,6 @@ header .logo {
     .language {
         display: none;
     }
-    
-
     .bottom-header {
         display:none;
     }
@@ -318,7 +311,6 @@ header .logo {
         margin-bottom: 16px;
         width: 130px;
     }
-
     /* Mobile */
 
     .icon-mobile-menu{
