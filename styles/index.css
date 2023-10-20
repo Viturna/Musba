@@ -1230,20 +1230,6 @@ form input[type=submit]:hover{
     }
     /* Partner */
     .partner{
-        margin-top: var(--spacing-meduim);
-        padding: var(--spacing-small) 0px;
-    }
-    .partner .title-section{
-        font-size: 35px;
-        width: 85vw;
-        text-align: center;
-    }
-    .flex-partner{
-        gap: 32px;
-        margin-top: var(--spacing-small);
-    }
-    .flex-partner div img{
-        width: 100px;
-        height: 70px;
+       display: none;
     }
 }
