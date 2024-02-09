@@ -1,33 +1,52 @@
-:root{
+.student-project {
+    background-color: var(--color-primary);
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.student-project  a {
+    color: #e5e5e5;
+}
+:root {
     --spacing-large: 128px;
     --spacing-meduim: 64px;
-    --spacing-small:32px;
-    --spacing:16px;
+    --spacing-small: 32px;
+    --spacing: 16px;
     --color-primary: #B92727;
     --color-primary-hover: #941F1F;
     --color-background: #F9FBFC;
     --color-title: #252525;
     --color-text: #687B8E;
 }
-body{
+
+body {
     font-family: Helvetica;
     background-color: var(--color-background);
     box-sizing: border-box;
     overflow-x: hidden;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-img{
+
+img {
     object-fit: cover;
 }
-.red{
+
+.red {
     color: var(--color-primary)
 }
+
 .bold {
     font-weight: 700;
 }
-.title-section{
+
+.title-section {
     color: var(--color-title);
     font-family: Abhaya Libre;
     font-size: 60px;
@@ -36,7 +55,8 @@ img{
     line-height: normal;
     letter-spacing: 0.6px;
 }
-.title{
+
+.title {
     padding-top: 300px;
     margin-left: 64px;
     width: 700px;
@@ -48,6 +68,7 @@ img{
     line-height: 115%;
     letter-spacing: 0.75px;
 }
+
 /* Fonts */
 /* Abhaya Libre */
 @font-face {
@@ -57,6 +78,7 @@ img{
     src: url('../assets/fonts/abhaya-libre/AbhayaLibre-Regular.woff2') format('woff2');
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Abhaya Libre';
     font-style: normal;
@@ -64,6 +86,7 @@ img{
     src: url('../assets/fonts/abhaya-libre/AbhayaLibre-Medium.woff2') format('woff2');
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Abhaya Libre';
     font-style: normal;
@@ -71,6 +94,7 @@ img{
     src: url('../assets/fonts/abhaya-libre/AbhayaLibre-SemiBold.woff2') format('woff2');
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Abhaya Libre';
     font-style: normal;
@@ -78,6 +102,7 @@ img{
     src: url('../assets/fonts/abhaya-libre/AbhayaLibre-Bold.woff2') format('woff2');
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Abhaya Libre';
     font-style: normal;
@@ -94,6 +119,7 @@ img{
     src: url('../assets/fonts/helvetica/helvetica-light.woff2') format('woff2');
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Helvetica';
     font-style: normal;
@@ -101,6 +127,7 @@ img{
     src: url('../assets/fonts/helvetica/Helvetica.woff2') format('woff2');
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Helvetica';
     font-style: normal;
@@ -110,16 +137,18 @@ img{
 }
 
 /* Header */
-a{
+a {
     text-decoration: none;
 }
-header{
+
+header {
     position: absolute;
     top: 0;
     width: 100vw;
-    transition: top 0.3s; 
+    transition: top 0.3s;
     z-index: 999;
 }
+
 .language {
     color: var(--White, #FFF);
     /* Body - p */
@@ -139,8 +168,8 @@ header{
     color: rgb(0, 0, 0);
 }
 
-header select:focus{
-    outline:0;
+header select:focus {
+    outline: 0;
 }
 
 
@@ -161,6 +190,7 @@ header select:focus{
     letter-spacing: 0.2px;
     cursor: pointer;
 }
+
 .navigation a:hover {
     opacity: 0.8;
 }
@@ -181,18 +211,18 @@ header select:focus{
 
 .search-bar-wrapper {
     margin-right: 64px;
-  }
-  
-  .search-bar-wrapper * {
+}
+
+.search-bar-wrapper * {
     outline: none;
     box-sizing: border-box;
-  }
-  
-  .input-wrapper {
+}
+
+.input-wrapper {
     position: relative;
-  }
-  
-  .input-field {
+}
+
+.input-field {
     width: 30px;
     height: 40px;
     position: absolute;
@@ -205,43 +235,43 @@ header select:focus{
     font-size: 18px;
     padding-bottom: 5px;
     cursor: pointer;
-  }
-  
-  .input-field:focus {
+}
+
+.input-field:focus {
     border-bottom: 3px solid #ffffff;
     width: 25vw;
     height: fit-content;
     color: #ffffff;
     cursor: default;
-  }
-  
-  .input-field:focus ~ .search-icon {
+}
+
+.input-field:focus~.search-icon {
 
     cursor: pointer;
     pointer-events: auto;
     border: none;
-  }
-  
-  .search-icon {
+}
+
+.search-icon {
     position: absolute;
     top: 0;
     right: 0;
     background-color: transparent;
 
     font-size: 20px;
-  
+
     text-align: center;
     border-color: transparent;
     border-radius: 50%;
     pointer-events: none;
     display: inline-block;
     transition: background-color 0.4s ease-in-out;
- 
-  }
-  
-  .input-field::-webkit-input-placeholder {
+
+}
+
+.input-field::-webkit-input-placeholder {
     color: #F9FBFC;
-  }
+}
 
 header hr {
     margin-left: 64px;
@@ -264,58 +294,66 @@ header .logo {
 
 /* Mobile */
 
-.icon-mobile-menu{
+.icon-mobile-menu {
     display: none;
 }
-.mobile-header{
+
+.mobile-header {
     display: none;
 }
 
 
-@media screen and (min-width:350px) and (max-width:500px){
-    body{
+@media screen and (min-width:350px) and (max-width:500px) {
+    body {
         overflow-x: hidden;
     }
-    .title{
+
+    .title {
         margin: 0;
         padding: 0;
         width: 80vw;
         text-align: center;
         font-size: 48px;
     }
-    .title-section{
+
+    .title-section {
         font-size: 35px;
     }
 
-    header{
+    header {
         background: rgba(0, 0, 0, 0.20);
     }
+
     .language {
         display: none;
     }
+
     .bottom-header {
-        display:none;
+        display: none;
     }
-    
+
     .top-header {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-    
+
     }
+
     header hr {
         display: none;
-    
+
     }
+
     header .logo {
         margin-left: 32px;
         margin-bottom: 16px;
         width: 130px;
         height: 60px;
     }
+
     /* Mobile */
 
-    .icon-mobile-menu{
+    .icon-mobile-menu {
         position: fixed;
         top: 0;
         right: -100%;
@@ -324,11 +362,9 @@ header .logo {
         background: #fafafa;
         transition: all 0.6s ease-in-out;
     }
-    .mobile-header{
+
+    .mobile-header {
         display: none;
     }
 
 }
-
-
-    
