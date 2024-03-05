@@ -5,19 +5,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Balises pour une indexation optimisée -->
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
-    
+
     <!-- CSS -->
     <link href="./styles/reset.css" rel="stylesheet" type="text/css">
     <link href="./styles/header.css" rel="stylesheet" type="text/css">
     <link href="./styles/footer.css" rel="stylesheet" type="text/css">
     <link href="./styles/exposition.css" rel="stylesheet" type="text/css">
     <link rel="preload" as="font">
-    
+
     <!-- META -->
     <title>Exposition - Absolutely Bizarre - MusBA</title>
     <meta name="description" content="La collection Absolutely Bizarre du musée des beau arts est là ! L'occasion de découvrir une vision de l'art revisité par les artistes anglais du XIX siècle.">
@@ -34,9 +34,25 @@
     <meta property="og:image" content="https://musba.netlify.app/assets/img/logos/musba.svg">
 </head>
 <body>
-    <div class="student-project">
-        Ce site s'inscrit dans le cadre d'un projet étudiant (MMI Bordeaux) - <a href="https://www.musba-bordeaux.fr/">Site officiel du MusBa</a> | Par Riquier Thomas, Juhel Alexis, Wainberg Tom, Volle Esthebann, Courcaud Antoine
-      </div>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div class="student-project">
+            Ce site s'inscrit dans le cadre d'un projet étudiant (MMI Bordeaux) - <a href="https://www.musba-bordeaux.fr/">Site officiel du MusBa</a> | Par <a target="_blank" href="viturna.fr">Riquier Thomas</a>, <a target="_blank" href="https://www.linkedin.com/in/alexis-juhel16/">Juhel Alexis</a>, <a target="_blank" href="https://www.linkedin.com/in/tom-wainberg/">Wainberg Tom</a>, <a target="_blank" href="https://www.linkedin.com/in/esthebann-volle-750924294/">Volle Esthebann</a>, <a target="_blank" href="https://www.linkedin.com/in/antoine-courcaud/">Courcaud Antoine</a>
+        </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var popup = document.getElementById('popup');
+      popup.style.display = 'block';
+  });
+
+  function closePopup() {
+      var popup = document.getElementById('popup');
+      popup.style.display = 'none';
+  }
+  </script>
     <header>
         <div class="top-header">
             <a href="./index.html" title="Retour à l'accueil" >
@@ -145,20 +161,20 @@
                     </defs>
                 </svg>
             </div>
-        </section>   
+        </section>
         <div class="ariane">
             <p data-translation-key="arianas_thread"><a href="#">Expositions</a>  >  <span class="red bold" data-translation-key="arianas_span">Expo Absolutely Bizarre</span></p>
         </div>
         <section id="show" class="presentation">
             <h2 class="title-section" data-translation-key="introduction">Présentation</h2>
             <p class="text" data-translation-key="introduction_text">
-                La collection d’art britannique du musée des Beaux-Arts de Bordeaux, 
-                à l’honneur de vous présenter sa dernière exposition “Absolutely Bizarre”. 
+                La collection d’art britannique du musée des Beaux-Arts de Bordeaux,
+                à l’honneur de vous présenter sa dernière exposition “Absolutely Bizarre”.
                 <br><br>
-                L’occasion de découvrir une exposition inédite, aux côtés de chefs-d'œuvre prêtés 
+                L’occasion de découvrir une exposition inédite, aux côtés de chefs-d'œuvre prêtés
                 exceptionnellement par le musée du Louvre, partenaire de cette année Britannique.
                 <br><br>
-                Plus qu’un simple mouvement pictural, il s’agit davantage d’une association 
+                Plus qu’un simple mouvement pictural, il s’agit davantage d’une association
                 informelle de peintres.  Mais principalement des paysagistes, et des amateurs
                  caractéristiques des réalités artistiques de la première moitié du XIXe siècle.
                  <br><br>
@@ -198,34 +214,34 @@
                         vues pittoresques, et enfin la peinture fantastique a été traitée avec une ambition
                         inédite jusqu’alors.
                         <br> <br>
-                        De 1800 à 1840, Bristol sera ainsi la pépinière de talents artistiques qui, pour 
-                        certains, se feront remarquer jusqu’à Londres : 
+                        De 1800 à 1840, Bristol sera ainsi la pépinière de talents artistiques qui, pour
+                        certains, se feront remarquer jusqu’à Londres :
                     </p>
                     <p class="highlight-text" data-translation-key="second_paragraph">
                         Edward Bird, Francis Danby, Edward Villiers Rippingille, Samuel Colman, Samuel Jackson,
-                        Rolinda Sharples – brillante artiste femme - et enfin William James Müller. 
+                        Rolinda Sharples – brillante artiste femme - et enfin William James Müller.
                     </p>
-    
+
                     <p class="text-expo" data-translation-key="third_paragraph">
                         Ce dernier, qui réalisa un témoignage saisissant des <span class="red bold"> émeutes embrasant Bristol en 1831 </span>,
-                        sera mis en regard, pour la première fois, d’un célèbre contemporain, William Turner, 
-                        dont on pourra admirer de puissantes aquarelles représentant l’incendie du Parlement 
+                        sera mis en regard, pour la première fois, d’un célèbre contemporain, William Turner,
+                        dont on pourra admirer de puissantes aquarelles représentant l’incendie du Parlement
                         britannique, qui eut lieu trois ans plus tard.
                     </p>
                     <div class="img-article">
-                        <img src="./assets/img/exposition/image-2.webp" alt=""> 
+                        <img src="./assets/img/exposition/image-2.webp" alt="">
                         <div class="overlay">
                             <p class="legend" data-translation-key="second_pic_caption">
                                 William West, Les Hébreux traversant le désert, précédés par le pilier de lumière (The
-                                Israelites Passing through the Wilderness, Preceded by the Pillar of Light), 1845, 
+                                Israelites Passing through the Wilderness, Preceded by the Pillar of Light), 1845,
                                 huile sur toile © Bristol, Bristol Museum & Art Gallery.
                             </p>
                         </div>
                     </div>
                     <p class="text-expo" data-translation-key="fourth_paragraph" id="ancre-2">
                         Le musée des Beaux-Arts accueille ainsi 80 œuvres provenant majoritairement du
-                        musée de Bristol (65 aquarelles et peintures à l’huile), auxquelles s'ajoutent 
-                        plusieurs prêts de la Victoria Art Gallery de Bath et de la Tate Britain de Londres 
+                        musée de Bristol (65 aquarelles et peintures à l’huile), auxquelles s'ajoutent
+                        plusieurs prêts de la Victoria Art Gallery de Bath et de la Tate Britain de Londres
                         ainsi que du musée du Louvre.
                         <br> <br>
                         <span class="bold">Commissariat d’Une Année britannique au musée ! :</span> Sophie Barthélémy, directrice du musée
@@ -240,7 +256,7 @@
                         <img src="./assets/img/exposition/image-3.webp" alt="">
                         <div class="overlay">
                             <p class="legend" data-translation-key="third_pic_caption">
-                                Francis Danby, Une scène à Leigh Woods (A Scene in Leigh Woods), 1822, huile sur toile, 
+                                Francis Danby, Une scène à Leigh Woods (A Scene in Leigh Woods), 1822, huile sur toile,
                                 Bristol Museum & Art Gallery.
                             </p>
                         </div>
@@ -250,10 +266,10 @@
                         de ce phénomène singulier qu’a représenté « L’École de Bristol ». Il rassemble des essais d’introduction
                         sur cette école mais aussi un ensemble de plus de 70 notices consacrées aux œuvres exposées. Dirigé par
                         Guillaume Faroult, cet ouvrage bénéficie des contributions de David Solkin, professeur honoraire au
-                        Courtauld Institute de Londres, de Jenny Gaschke, conservatrice des collections anciennes (pré-1900) au 
-                        Bristol Museum & Art Gallery, d’Amy Concannon, conservatrice des collections britanniques (1790-1850) à 
+                        Courtauld Institute de Londres, de Jenny Gaschke, conservatrice des collections anciennes (pré-1900) au
+                        Bristol Museum & Art Gallery, d’Amy Concannon, conservatrice des collections britanniques (1790-1850) à
                         la Tate Britain, ainsi que des co-commissaires Sophie Barthélémy et Sandra Buratti-Hasan.
-                        Absolutely Bizarre ! Les drôles d’histoires de l’École de Bristol (1800-1840), coédition musée des 
+                        Absolutely Bizarre ! Les drôles d’histoires de l’École de Bristol (1800-1840), coédition musée des
                         Beaux-Arts/Éditions Snoeck, 280 pages, 29 euros.
                     </p>
                     <a class="link-more" href="#" data-translation-key="buy_ticket">
@@ -265,7 +281,7 @@
                         </svg>
                     </a>
                 </section>
-                
+
                 <section class="collection">
                     <h2 class="title-section" data-translation-key="other_collections">Découvir nos autres collections </h2>
                     <div class="container-articles">
@@ -287,7 +303,7 @@
                     </div>
                 </section>
             </div>
-        </div> 
+        </div>
 
         <section class="partenaires">
             <h2 class="title-section" data-translation-key="exhibition_partners">Merci à nos mécènes et partenaires de l’exposition</h2>
@@ -315,7 +331,7 @@
                 let isDragging = false;
                 let initialX;
                 let xOffset = 0;
-              
+
                 flexPartner.addEventListener('mousedown', (e) => {
                   // Vérifiez si l'élément ciblé n'est pas une image (balise <img>)
                   if (!e.target.classList.contains('link-partner-img')) {
@@ -323,12 +339,12 @@
                     initialX = e.clientX - xOffset;
                   }
                 });
-              
+
                 flexPartner.addEventListener('mouseup', () => {
                   isDragging = false;
                   initialX = xOffset;
                 });
-              
+
                 flexPartner.addEventListener('mousemove', (e) => {
                   if (isDragging) {
                     const currentX = e.clientX - initialX;
@@ -336,7 +352,7 @@
                     flexPartner.style.transform = `translateX(${currentX}px)`;
                   }
                 });
-              </script>  
+              </script>
             <div class="box-partner-text">
                 <p class="text-partner" data-translation-key="other_partners_first_paragraph">
                     <span class="bold" data-translation-key="other_partners">Et les partenaires de sa programmation culturelle :</span>
@@ -351,7 +367,7 @@
                     <br>
                     British Consulate
                     <br>
-                    Lecteurs migrateurs 
+                    Lecteurs migrateurs
                 </p>
                 <p class="text-partner" data-translation-key="other_partners_second_paragraph">
                     Opéra National de Bordeaux
@@ -359,7 +375,7 @@
                     Tim Pike
                     <br>
                     Pôle d'enseignement supérieur de la musique et de la danse de Bordeaux Aquitaine (PESMD)
-                    <br> 
+                    <br>
                     Université de Bordeaux
                     <br>
                     Université de Toulouse
@@ -458,7 +474,7 @@
             <p class="mention-legales">© MusBA 2023 - Tous droits réservés</p>
             <ul>
                 <li>
-                    <a href="#">Support</a> 
+                    <a href="#">Support</a>
                 </li>
                 <li>
                     <div class="vertical"></div>
@@ -469,7 +485,7 @@
                 <li>
                     <div class="vertical"></div>
                 </li>
-    
+
                 <li>
                     <a href="#">Politique de confidentialité</a>
                 </li>
@@ -477,7 +493,7 @@
                     <div class="vertical"></div>
                 </li>
                 <li>
-                    <a href="#">CGV</a>  
+                    <a href="#">CGV</a>
                 </li>
             </ul>
         </div>

@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <!-- Balises pour une indexation optimisée -->
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
-   
+
     <!-- CSS -->
     <link href="./styles/reset.css" rel="stylesheet" type="text/css">
     <link href="./styles/header.css" rel="stylesheet" type="text/css">
@@ -34,9 +34,25 @@
     <meta property="og:image" content="https://musba.netlify.app/assets/img/logos/musba.svg">
 </head>
 <body>
-  <div class="student-project">
-    Ce site s'inscrit dans le cadre d'un projet étudiant (MMI Bordeaux) - <a href="https://www.musba-bordeaux.fr/">Site officiel du MusBa</a> | Par Riquier Thomas, Juhel Alexis, Wainberg Tom, Volle Esthebann, Courcaud Antoine
-  </div>
+  <div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div class="student-project">
+            Ce site s'inscrit dans le cadre d'un projet étudiant (MMI Bordeaux) - <a href="https://www.musba-bordeaux.fr/">Site officiel du MusBa</a> | Par <a target="_blank" href="viturna.fr">Riquier Thomas</a>, <a target="_blank" href="https://www.linkedin.com/in/alexis-juhel16/">Juhel Alexis</a>, <a target="_blank" href="https://www.linkedin.com/in/tom-wainberg/">Wainberg Tom</a>, <a target="_blank" href="https://www.linkedin.com/in/esthebann-volle-750924294/">Volle Esthebann</a>, <a target="_blank" href="https://www.linkedin.com/in/antoine-courcaud/">Courcaud Antoine</a>
+        </div>
+    </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+});
+
+function closePopup() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'none';
+}
+</script>
   <header>
     <div class="top-header">
         <a href="./index.html" title="Retour à l'accueil" >
@@ -161,7 +177,7 @@
                     <p class="date-card-expo">2 juin 2023 – 7 janvier 2024</p>
                   </div>
             </div>
-        </div> 
+        </div>
     </section>
     <section class="storie">
         <h2 class="title-section">Histoire de notre musée</h2>
@@ -392,7 +408,7 @@
             <p class="text-news">Récemment de gros travaux ont été entrepris afin de rénover le musée et principalement l’extérieur. <br>
                 Le but était ainsi de le remettre au goût du jour et de le rendre à nouveau beau et attractif pour avoir un bâtiment qui est digne des merveilles qu’il contient. </p>
             <a href="#" class="link">
-                En savoir plus 
+                En savoir plus
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
                 <g clip-path="url(#clip0_472_616)">
                   <path d="M17.3002 11.3126L7.44433 21.1685L5.8253 19.5494L15.6811 9.69357H6.61458L6.63481 7.40669H19.5871V20.3589L17.3002 20.3792V11.3126Z" fill="#B92727"/>
@@ -413,7 +429,7 @@
           <p class="date-news">12/11/2023</p>
           <p class="text-news">Le musée des Beaux-Arts présente une riche collection d’œuvres allant du XVIe au XXe siècle et présente diverses expositions à la Galerie des Beaux-Arts. Maintenant activement à la recherche d’un stagiaire plusieurs missions lui seront proposées. </p>
           <a href="#" class="link">
-              En savoir plus 
+              En savoir plus
               <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
               <g clip-path="url(#clip0_472_616)">
                 <path d="M17.3002 11.3126L7.44433 21.1685L5.8253 19.5494L15.6811 9.69357H6.61458L6.63481 7.40669H19.5871V20.3589L17.3002 20.3792V11.3126Z" fill="#B92727"/>
@@ -428,7 +444,7 @@
         </div>
     </div>
       <a href="#" class="link-more">
-          Toutes les dernières actualités 
+          Toutes les dernières actualités
           <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
               <g clip-path="url(#clip0_204_3348)">
               <path d="M29.5681 17.9083L12.5673 34.9091L9.77456 32.1164L26.7753 15.1156L11.136 15.1156L11.1709 11.1709H33.5128V33.5127L29.5681 33.5476L29.5681 17.9083Z" fill="#B92727"/>
@@ -575,7 +591,7 @@
             <div class="box-text-asso">
                 <p class="text-asso">Participer à l’enrichissement des collections, écouter des historiens de l'art, apprendre à voir, regarder le beau et tisser des liens... La Société des Amis du musée des Beaux-Arts de Bordeaux est faite pour vous</p>
                 <a href="#" class="link">
-                    En savoir plus 
+                    En savoir plus
                     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
                     <g clip-path="url(#clip0_472_158)">
                       <path d="M17.2728 10.6485L7.41699 20.5044L5.79796 18.8854L15.6538 9.02951H6.58723L6.60747 6.74263H19.5597V19.6949L17.2728 19.7151V10.6485Z" fill="#B92727"/>
@@ -643,7 +659,7 @@
                   <a href="mailto:musba@mairie-bordeaux.fr">musba@mairie-bordeaux.fr</a>
                 </p>
               </div>
-            </div> 
+            </div>
           </div>
         </div>
     </section>
@@ -760,7 +776,7 @@
       let isDragging = false;
       let initialX;
       let xOffset = 0;
-    
+
       flexPartner.addEventListener('mousedown', (e) => {
         // Vérifiez si l'élément ciblé n'est pas une image (balise <img>)
         if (!e.target.classList.contains('link-partner-img')) {
@@ -768,12 +784,12 @@
           initialX = e.clientX - xOffset;
         }
       });
-    
+
       flexPartner.addEventListener('mouseup', () => {
         isDragging = false;
         initialX = xOffset;
       });
-    
+
       flexPartner.addEventListener('mousemove', (e) => {
         if (isDragging) {
           const currentX = e.clientX - initialX;
@@ -781,7 +797,7 @@
           flexPartner.style.transform = `translateX(${currentX}px)`;
         }
       });
-    </script>    
+    </script>
   </main>
   <footer>
     <div class= "top-footer">
@@ -873,7 +889,7 @@
         <p class="mention-legales">© MusBA 2023 - Tous droits réservés</p>
         <ul>
             <li>
-                <a href="#">Support</a> 
+                <a href="#">Support</a>
             </li>
             <li>
                 <div class="vertical"></div>
@@ -892,7 +908,7 @@
                 <div class="vertical"></div>
             </li>
             <li>
-                <a href="#">CGV</a>  
+                <a href="#">CGV</a>
             </li>
         </ul>
     </div>
